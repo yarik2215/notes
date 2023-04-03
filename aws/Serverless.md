@@ -1,4 +1,6 @@
-# Building modern python applications on aws
+# Serverless
+
+Building modern python applications on aws
 
 ## API Gateway
 

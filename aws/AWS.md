@@ -1,4 +1,9 @@
+# AWS
+
 Notes:
-- [[Lambda]]
+
+- [[Compute]]
 - [[Network]]
 - [[Databases]]
+- [[Serverless]]
+- [[CDK]]
