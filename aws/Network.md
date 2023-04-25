@@ -5,6 +5,28 @@ AWS PrivateLink provides a private connection between your VPCs and supported AW
 
 ![.assets/Network_20230323234312.png](.assets/Network_20230323234312.png)
 
+## VPC Endpoint
+
+A VPC endpoint enables customers to privately connect to supported AWS services and VPC endpoint services powered by AWS PrivateLink. Amazon VPC instances do not require public IP addresses to communicate with resources of the service. Traffic between an Amazon VPC and a service does not leave the Amazon network. VPC endpoints are horizontally scaled, redundant, and highly available Amazon VPC components that allow communication between instances in an Amazon VPC and services without imposing availability risks or bandwidth constraints on network traffic. It's powered by AWS Private Link. There are two types of VPC endpoints:
+
+- interface endpoints
+- gateway endpoints
+
+![.assets/Network/Network_20230423211050.png](.assets/Network/Network_20230423211050.png)
+
+### Interface endpoint
+An interface endpoint is an elastic network interface (ENI) similar to a virtual network card but with a private IP address. The private IP will be from the IP address range of the subnet already specified by the user. This ENI will act as the main entry point for the traffic going to any supported AWS service. 
+
+![.assets/Network/Network_20230423210328.png](.assets/Network/Network_20230423210328.png)
+
+### Gateway endpoint
+
+Using Gateway endpoints does not incur any data processing or hourly charges. It creates an entrypoint for traffic routed to S3 or DynamoDB (only this 2 services support gateway endpoint). Gateway endpoint should be added to vpc route table.
+
+![.assets/Network/Network_20230423210816.png](.assets/Network/Network_20230423210816.png)
+
+
+
 ## VPC Peering
 A VPC peering connection is a networking connection between two VPCs that lets you route traffic between them privately. 
 

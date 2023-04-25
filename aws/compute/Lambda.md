@@ -5,3 +5,4 @@
 ## Additional resources
 
 - [[Serverless]]
+- [Connect lambda to aws services from VPC](https://www.alexdebrie.com/posts/aws-lambda-vpc/)

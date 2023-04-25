@@ -196,6 +196,7 @@ High-level constructs support only some of the options of the AWS CloudFormation
 - [Open CDK Guide](https://github.com/kevinslin/open-cdk#tools-and-libraries)
 - [AWS Solutions Constructs](https://docs.aws.amazon.com/solutions/latest/constructs/welcome.html)
 - [Construc Hub](https://constructs.dev/)
+- [CDK Workshop](https://cdkworkshop.com/30-python/50-table-viewer/200-install.html)
 
 **Videos:**
 

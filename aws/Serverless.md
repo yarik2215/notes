@@ -139,6 +139,7 @@ Lambda@Edge is a feature of Amazon CloudFront that lets you run code closer to u
 
 - [Serverlessland](https://serverlessland.com/)
 - [AWS Blog](https://aws.amazon.com/ru/blogs/compute/tag/serverless/)
+- [Ran the builder](https://www.ranthebuilder.cloud/)
 
 ### Videos
 
