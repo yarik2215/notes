@@ -1,5 +1,25 @@
 # Network
 
+## AWS Shared Responsibility Model
+
+![.assets/Network/Network_20230430121632.png](.assets/Network/Network_20230430121632.png)
+
+![.assets/Network/Network_20230430121751.png](.assets/Network/Network_20230430121751.png)
+
+## Tools for monitoring and troubleshooting 
+
+- Amazon CloudWatch
+- VPC Flow Logs
+- Traffic Mirroring
+- VPC Reachability Analyzer
+- AWS Transit Gateway Network Manager
+
+## How to implement network security
+
+- **Firewalls** are a system designed to prevent unauthorized access to or from a private network. You can implement a firewall in either hardware or software form, or a combination of both. Firewalls prevent unauthorized internet users from accessing private networks connected to the internet, especially intranets.
+- **Packet sniffers**, also known as a packet analyzer, protocol analyzer or network analyzer, are pieces of hardware or software used to monitor network traffic. Sniffers work by examining streams of data packets that flow between computers on a network and also flow between networked computers and the larger internet.
+- **Penetration testing** software or penetration tools help in identifying security weaknesses in a network, server, or web application. These tools are useful to identify the unknown vulnerabilities in the software and networking applications that can cause a security breach.
+
 ## AWS Private Link
 AWS PrivateLink provides a private connection between your VPCs and supported AWS services. This AWS service provides secure usage within the AWS network and avoids exposing traffic to the public internet.
 
@@ -67,3 +87,9 @@ Based on OpenVPN technology, Client VPN is a managed client-based VPN service th
 
 ## AWS Transit Gateway
 AWS Transit Gateway is a highly available and scalable service that provides interconnectivity between VPCs and your on-premises network. Within a Region, AWS Transit Gateway provides a method for consolidating and centrally managing routing between VPCs with a hub-and-spoke network architecture.
+
+![.assets/Network/Network_20230501132408.png](.assets/Network/Network_20230501132408.png)
+
+![.assets/Network/Network_20230501131904.png](.assets/Network/Network_20230501131904.png)
+
+[TransitGateway workshop](https://catalog.workshops.aws/networking/en-US/beginner/lab1/030-tgw)

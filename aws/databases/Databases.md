@@ -80,3 +80,7 @@ Graph databases store data as nodes, while edges store information on the relati
 
 ## Common database types and use cases
 ![.assets/Databases_20230323233016.png](.assets/Databases_20230323233016.png)
+
+## Caching strategies
+
+[Database Caching Strategies Using Redis](https://docs.aws.amazon.com/whitepapers/latest/database-caching-strategies-using-redis/welcome.html)

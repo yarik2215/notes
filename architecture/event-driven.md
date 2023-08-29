@@ -58,3 +58,9 @@ Event streams are continuous flows of events, which may be processed individuall
 ![.assets/event-driven/event-driven_20230424234322.png](.assets/event-driven/event-driven_20230424234322.png)
 
 Can be implemented with: [[Kinesis Streams]] or [[Kafka]]
+
+---
+
+## Additional Resources
+
+- [Advantages of the event-driven architecture pattern](https://developer.ibm.com/articles/advantages-of-an-event-driven-architecture/)

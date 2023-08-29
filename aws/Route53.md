@@ -1,6 +1,6 @@
 # Route53
 
-## Notes
+## Record types
 
 - The `A` record maps a name to one or more IP addresses when the IP are known and stable.
 - The `CNAME` record maps a name to another name. It should only be used when there are no other records on that name.

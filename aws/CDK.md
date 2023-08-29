@@ -193,10 +193,18 @@ High-level constructs support only some of the options of the AWS CloudFormation
 ## Resources
 
 - [bobbyhadz blog](https://bobbyhadz.com/)
+- [CDK Best practices. RanTheBuilder](https://www.ranthebuilder.cloud/post/aws-cdk-best-practices-from-the-trenches)
 - [Open CDK Guide](https://github.com/kevinslin/open-cdk#tools-and-libraries)
 - [AWS Solutions Constructs](https://docs.aws.amazon.com/solutions/latest/constructs/welcome.html)
 - [Construc Hub](https://constructs.dev/)
-- [CDK Workshop](https://cdkworkshop.com/30-python/50-table-viewer/200-install.html)
+- [CDK Workshop](https://cdkworkshop.com)
+
+How to structure infrastructure:
+
+- [Recommended AWS CDK project structure](https://aws.amazon.com/ru/blogs/developer/recommended-aws-cdk-project-structure-for-python-applications/)
+- [Where Should I Store My IaC?](https://devops.com/where-should-i-store-my-iac/)
+- https://dev.to/n3wt0n/i-store-my-infra-as-code-this-way-you-should-too-1pa3
+
 
 **Videos:**
 
