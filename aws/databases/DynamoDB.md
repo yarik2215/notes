@@ -1,4 +1,5 @@
 # DynamoDB
+[[Serverless]]
 
 DynamoDB is key-value database, it's highly scalable and available. 
 
@@ -167,4 +168,5 @@ Store different types of object in one table.
 - [How to use DynamoDB global secondary indexes to improve query performance and reduce costs](https://aws.amazon.com/ru/blogs/database/how-to-use-dynamodb-global-secondary-indexes-to-improve-query-performance-and-reduce-costs/)
 - [Local Secondary Indexes for Amazon DynamoDB](https://aws.amazon.com/ru/blogs/aws/local-secondary-indexes-for-amazon-dynamodb/)
 - [Creating a single-table design with Amazon DynamoDB](https://aws.amazon.com/ru/blogs/compute/creating-a-single-table-design-with-amazon-dynamodb/)
-- [[Serverless]]
+- [Simulating Amazon DynamoDB unique constraints using transactions](https://aws.amazon.com/ru/blogs/database/simulating-amazon-dynamodb-unique-constraints-using-transactions/)
+- [Как, почему и когда следует использовать одно-табличный дизайн в DynamoDB](https://habr.com/ru/articles/732578/)

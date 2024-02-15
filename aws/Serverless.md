@@ -66,7 +66,7 @@ States can perform a variety of functions in your state machine:
 - Begin parallel branches of execution (a Parallel state)
 - Dynamically iterate steps (a Map state)
 
-There are 3 type of services integrations:
+[There are 3 type of services integrations](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html):
 -  	Request Response
 -  	Run a Job (.sync)
 -  	Wait for Callback (.waitForTaskToken)
