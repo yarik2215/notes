@@ -1,10 +1,12 @@
 # [[Svelte]]
+
 Svelte is a tool for building fast web applications.
 
 [Svelte](https://svelte.dev/docs/introduction)
 [SvelteKit](https://kit.svelte.dev/docs/introduction)
 
 ## Component
+
 A component is a reusable self-contained block of code that encapsulates HTML, CSS and JavaScript that belong together, written into a .svelte file.
 
 ```svelte
@@ -15,8 +17,8 @@ A component is a reusable self-contained block of code that encapsulates HTML, C
 <p>This is a {name}.</p>
 
 <style>
-	/* Style are scoped to component */
-	p {
+ /* Style are scoped to component */
+ p {
     color: purple;
     font-family: 'Comic Sans MS', cursive;
     font-size: 2em;
@@ -36,12 +38,13 @@ We can import and use other components inside components:
 ```
 
 Add event handler:
+
 ``` svelte
 <script>
-	let count = 0;
-	function incrementCount() {
-		count += 1;
-	}
+ let count = 0;
+ function incrementCount() {
+  count += 1;
+ }
 </script>
 
 <button on:click={incrementCount}>
@@ -55,13 +58,16 @@ $: doubled = count * 2;
 ```
 
 We can also run arbitrary statements reactively and group statements together with a block:
+
 ```js
 $: {
   console.log('the count is ' + count);
   alert('I SAID THE COUNT IS ' + count);
 }
 ```
+
 Or using `if`:
+
 ```js
 $: if (count >= 10) {
   alert('count is dangerously high!');
@@ -72,6 +78,7 @@ $: if (count >= 10) {
 > Svelte's reactivity is triggered by assignments. Methods that mutate arrays or objects will not trigger updates by themselves. One way to fix that is to assign numbers to itself to tell the compiler it has changed. The same rule applies to array methods such as pop, shift, and splice and to object methods such as Map.set, Set.add, etc.
 
 ## Properties
+
 In Svelte, we create props with the export keyword.
 
 ```svelte
@@ -79,6 +86,7 @@ In Svelte, we create props with the export keyword.
   export let answer;
 </script>
 ```
+
 > We can easily specify default values for props.
 
 If you have an object of properties, you can 'spread' them onto a component instead of specifying each one:
@@ -90,6 +98,7 @@ If you have an object of properties, you can 'spread' them onto a component inst
 > Conversely, if you need to reference all the props that were passed into a component, including ones that weren't declared with export, you can do so by accessing $$props directly.
 
 ## Condition expressions
+
 To conditionally render some markup, we wrap it in an `if` block:
 
 ```svelte
@@ -106,7 +115,7 @@ If you need to loop over lists of data, use an `each` block:
 
 ```svelte
 <script>
-	let cats = [...]
+ let cats = [...]
 </script>
 
 <ul>
@@ -277,17 +286,17 @@ We can also use bind:value with `<select>` elements.
 
 ```svelte
 <form on:submit|preventDefault={handleSubmit}>
-	<select bind:value={selected} on:change={() => (answer = '')}>
-		{#each questions as question}
-			<option value={question}>
-				{question.text}
-			</option>
-		{/each}
-	</select>
+ <select bind:value={selected} on:change={() => (answer = '')}>
+  {#each questions as question}
+   <option value={question}>
+    {question.text}
+   </option>
+  {/each}
+ </select>
 
-	<input bind:value={answer} />
+ <input bind:value={answer} />
 
-	<button disabled={!answer} type="submit"> Submit </button>
+ <button disabled={!answer} type="submit"> Submit </button>
 </form>
 ```
 
@@ -359,7 +368,7 @@ Every component has a lifecycle that starts when it is created, and ends when it
 
 ### onMount
 
-`onMount` runs after the component is first rendered to the DOM. 
+`onMount` runs after the component is first rendered to the DOM.
 
 ```svelte
 <script>
@@ -398,7 +407,8 @@ When you update component state in Svelte, it doesn't update the DOM immediately
 
 ### Writable store
 
-A store is simply an object with a subscribe method that allows interested parties to be notified whenever the store value changes. 
+A store is simply an object with a subscribe method that allows interested parties to be notified whenever the store value changes.
+
 ```svelte
 <script>
   // create store
@@ -420,6 +430,7 @@ A store is simply an object with a subscribe method that allows interested parti
 > The app in the previous example works, but there's a subtle bug — the store is subscribed to, but never unsubscribed. If the component was instantiated and destroyed many times, this would result in a memory leak.
 
 Start by declaring unsubscribe in App.svelte:
+
 ```js
 const unsubscribe = count.subscribe((value) => {
   countValue = value;
@@ -429,6 +440,7 @@ const unsubscribe = count.subscribe((value) => {
 > Calling a subscribe method returns an unsubscribe function.
 
 Svelte has a trick up its sleeve — you can reference a store value by prefixing the store name with `$`:
+
 ```svelte
 <script>
   import { count } from './stores.js';
@@ -484,6 +496,7 @@ function createCount() {
 ```
 
 ### Store bindings
+
 If a store is writable — i.e. it has a set method — you can bind to its value, just as you can bind to local component state.
 
 ```svelte

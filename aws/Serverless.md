@@ -36,6 +36,8 @@ A stage is a named reference to a deployment, which is a snapshot of the API. Yo
 
 ## AWS Lambda
 
+[[Lambda]]
+
 AWS Lambda is a compute service that lets you run code without provisioning or managing servers. AWS Lambda executes your code only when needed and scales automatically, from a few requests per day to thousands per second. You pay only for the compute time you consume - there is no charge when your code is not running. With AWS Lambda, you can run code for virtually any type of application or backend service - all with little to no administration in regards to environment provisioning and scaling.
 
 ![.assets/Serverless/Serverless_20230323235124.png](.assets/Serverless/Serverless_20230323235124.png)
@@ -134,6 +136,10 @@ ApiGateway can cache responses. When you enable caching for a stage, API Gateway
 ### AWS Lambda @ Edge
 
 Lambda@Edge is a feature of Amazon CloudFront that lets you run code closer to users of your application, which improves performance and reduces latency. With Lambda@Edge, you don't have to provision or manage infrastructure in multiple locations around the world. You pay only for the compute time you consume - there is no charge when your code is not running.
+
+## Storage
+
+[[DynamoDB]]
 
 ## Resources
 
